@@ -56,12 +56,17 @@ table {
 html, body {
     height: 100%;
 }
-
+.pageSize(){
+	max-width: 900px;
+	margin: 0 auto;
+	font-size: 1.2rem;
+}
+.Container{
+	.pageSize;
+}
 .navigation{
 	width: 100%;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 
 	nav {
 		display: flex;
@@ -75,8 +80,20 @@ html, body {
 		text-decoration: none;
 		padding: 25px;
 	}
+}
 
-	.Me {
+.Me{
+	font-style: italic;
 
+	h1{
+		font-size: 86px;
 	}
+
+	h2 {
+		font-size: 56px;
+	}
+}
+
+.mainContent{
+
 }
