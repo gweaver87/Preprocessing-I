@@ -172,3 +172,19 @@ img.bg {
 .Me h2 {
   font-size: 56px;
 }
+.mainContent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.mainContent h2 {
+  font-size: 35px;
+}
+.mainContent .work1 {
+  margin: 20px 2.5%;
+  width: 45%;
+}
+.mainContent .work2 {
+  margin: 20px 2.5%;
+  width: 45%;
+}
