@@ -57,34 +57,31 @@ html, body {
     height: 100%;
 }
 
-img.bg {
-    min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-		z-index: -1;
-}
 
 .pageSize(){
 	max-width: 900px;
 	margin: 0 auto;
-	font-size: 1.2rem;
+	font-size: 26px;
+
 }
 
 .Container{
 	.pageSize;
-	max-width: 600px;
-	margin: 0 auto;
-	font-size: 1.6rem;
-}
+
+	img.bg {
+	    min-height: 100%;
+	    min-width: 1024px;
+	    width: 100%;
+	    height: auto;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+			z-index: -1;
+	}
+
+
 
 .navigation{
-	width: 100%;
-	display: flex;
-
 	nav {
 		display: flex;
 		width: 100%;
@@ -93,21 +90,34 @@ img.bg {
 		justify-content: center;
 	}
 
-	a {
-		text-decoration: none;
-		padding: 25px;
+	a{
+		padding: 15px;
 	}
+
+
 }
 
 .Me{
 	font-style: italic;
+	text-align: center;
 
 	h1{
 		font-size: 86px;
 	}
 
 	h2 {
+		font-size: 76px;
+	}
+}
+
+.mainContent{
+	.intro{
+		font-size: 26px;
+		text-align: center;
+	}
+	h2{
 		font-size: 56px;
+		text-align: center;
 	}
 }
 
@@ -132,12 +142,16 @@ img.bg {
 }
 
 .contact{
+	h2{
+		font-size: 56px;
+		color:red;
+	}
 	form {
   margin: 0 auto;
   width: 400px;
   padding: 1em;
   border: 1px solid #CCC;
-  border-radius: 1em;
+  border-radius: 25px;
 }
 
 div + div {
@@ -154,28 +168,19 @@ label {
 input, textarea {
 
   font: 1em sans-serif;
-
-
   width: 300px;
-
   -moz-box-sizing: border-box;
-       box-sizing: border-box;
-
-
+   box-sizing: border-box;
   border: 1px solid #999;
 }
 
 input:focus, textarea:focus {
-
   border-color: #000;
 }
 
 textarea {
-
   vertical-align: top;
-
   height: 5em;
-
   resize: vertical;
 }
 
@@ -184,8 +189,21 @@ textarea {
 }
 
 button {
-
   margin-left: .5em;
 }
+}
 
+.footer{
+		nav {
+			display: flex;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		a {
+			padding: 25px;
+		}
+}
 }

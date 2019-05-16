@@ -134,7 +134,12 @@ html,
 body {
   height: 100%;
 }
-img.bg {
+.Container {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 26px;
+}
+.Container img.bg {
   min-height: 100%;
   min-width: 1024px;
   width: 100%;
@@ -144,87 +149,97 @@ img.bg {
   left: 0;
   z-index: -1;
 }
-.Container {
-  max-width: 900px;
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 1.6rem;
-}
-.navigation {
-  width: 100%;
-  display: flex;
-}
-.navigation nav {
+.Container .navigation nav {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.navigation a {
-  text-decoration: none;
-  padding: 25px;
+.Container .navigation a {
+  padding: 15px;
 }
-.Me {
+.Container .Me {
   font-style: italic;
+  text-align: center;
 }
-.Me h1 {
+.Container .Me h1 {
   font-size: 86px;
 }
-.Me h2 {
-  font-size: 56px;
+.Container .Me h2 {
+  font-size: 76px;
 }
-.workHistory {
+.Container .mainContent .intro {
+  font-size: 26px;
+  text-align: center;
+}
+.Container .mainContent h2 {
+  font-size: 56px;
+  text-align: center;
+}
+.Container .workHistory {
   display: flex;
   flex-wrap: wrap;
 }
-.workHistory p {
+.Container .workHistory p {
   line-height: 1.25;
   margin: 20px 0;
 }
-.workHistory .work1 {
+.Container .workHistory .work1 {
   margin: 20px 2.5%;
   width: 45%;
 }
-.workHistory .work2 {
+.Container .workHistory .work2 {
   margin: 20px 2.5%;
   width: 45%;
 }
-.contact form {
+.Container .contact h2 {
+  font-size: 56px;
+  color: red;
+}
+.Container .contact form {
   margin: 0 auto;
   width: 400px;
   padding: 1em;
   border: 1px solid #CCC;
-  border-radius: 1em;
+  border-radius: 25px;
 }
-.contact div + div {
+.Container .contact div + div {
   margin-top: 1em;
 }
-.contact label {
+.Container .contact label {
   display: inline-block;
   width: 90px;
   text-align: right;
 }
-.contact input,
-.contact textarea {
+.Container .contact input,
+.Container .contact textarea {
   font: 1em sans-serif;
   width: 300px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid #999;
 }
-.contact input:focus,
-.contact textarea:focus {
+.Container .contact input:focus,
+.Container .contact textarea:focus {
   border-color: #000;
 }
-.contact textarea {
+.Container .contact textarea {
   vertical-align: top;
   height: 5em;
   resize: vertical;
 }
-.contact .button {
+.Container .contact .button {
   padding-left: 90px;
 }
-.contact button {
+.Container .contact button {
   margin-left: 0.5em;
+}
+.Container .footer nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.Container .footer a {
+  padding: 25px;
 }
