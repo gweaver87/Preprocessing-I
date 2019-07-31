@@ -157,6 +157,7 @@ body {
 }
 .Container .navigation a {
   padding: 15px;
+  text-decoration: none;
 }
 .Container .Me {
   font-style: italic;
